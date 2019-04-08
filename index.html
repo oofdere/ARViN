@@ -10,8 +10,11 @@
 </head>
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
-        <a-image position="0, 0, 0" rotation="-90 0 0" width="4" height="7.6" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Wikipe-tan_full_length.svg"></a-image>
-        <a-marker-camera preset='hiro'></a-marker-camera>
+        <a-marker preset-"hiro">
+            <a-image position="0, 0, 0" rotation="-90 0 0" width="4" height="7.6" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Wikipe-tan_full_length.svg"></a-image>
+        </a-marker>
+        
+        <a-entity camera></a-entity>
     </a-scene>
 </body>
 </html>
