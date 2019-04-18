@@ -13,13 +13,12 @@
 ## Made With
  - HTML
  - JavaScript
- - Arch Linux
  - A-Frame
  - AR.js
  - ARToolkit
  - VRoid Studio
-  
+ - OBS Studio
+ - Chromium Embedded Platform
+
 ## Attribution
 Wikipe-Tan Vector redraw by *Editor at Large*, original png by *Kasuga~jawiki*, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=3563896
-
-Doki Doki Literature Club Characters and illustrations proprerty of Team Salvato, and are being used as placeholders before our own character designs are done, and will be removed asap. See their IP Guidelines: http://teamsalvato.com/ip-guidelines/ (also play ddlc)
