@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-fps-look-controls-component/dist/aframe-fps-look-controls-component.min.js"></script>
+
+    <script src="https://unpkg.com/aframe-animation-component@^4.1.1/dist/aframe-animation-timeline-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-timeline-component@1.6.0/dist/aframe-animation-timeline-component.min.js"></script>
+
+    <style>
+      html {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+  </head>
+  <body>
+    <a-scene animation-timeline="timeline: #timeline;" vr-mode-ui="enabled: false;" renderer="antiailas:true; colorManagement: true; logarithmicDepthBuffer: true;" stats>
+      <a-assets>
+        <a-timeline id="timeline">
+          <a-timeline-animation select="#l1" name="togglevisible"></a-timeline-animation>
+        </a-timeline>
+
+        <a-mixin id="text"
+          text="align: center; color: #333; width: 6; opacity: 0"
+          animation__fadein="property: text.opacity; from: 0; to: 1; dur: 3000; easing: linear; autoplay: false"
+          animation__fadeout="property: text.opacity; from: 1; to: 0; dur: 3000; easing: linear; autoplay: false"
+          animation__togglevison="property: visible; from: false; to: true; dur: 1; autoplay: false"
+          animation__togglevisoff="property: visible; from: true; to: false; dur: 1; autoplay: false"
+          visible="false"
+        ></a-mixin>
+      </a-assets>
+      
+      <a-box position></a-box>
+
+      <a-entity camera fps-look-controls wasd-controls position="0 1.6 0"></a-entity>
+
+      
+
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
