@@ -1,1 +1,3 @@
-nativefier --name "ARViN Debug Build" --arch x64 --app-version 0.1 --build-version "local nightly" --app-copyright "(c)2019 oofdere" --width 3840 --height 2160 --min-width 3840 --min-height 2160 --max-width 3840 --max-height 2160 --honest --ignore-certificate --ignore-gpu-blacklist --insecure --hide-window-frame --disable-context-menu --fullscreen https://oofdere.github.io/ARViN/debug.html
+nativefier --name "ARViN Debug Build" --arch x64 --app-version 0.1 --build-version 19.21.04.0 --app-copyright "(c)2019 oofdere" --width 3840 --height 2160 --min-width 3840 --min-height 2160 --max-width 3840 --max-height 2160 --honest --ignore-certificate --ignore-gpu-blacklist --insecure --hide-window-frame --disable-context-menu --full-screen --enable-es3-apis https://oofdere.github.io/ARViN/debug.html
+
+pause
